@@ -1,0 +1,29 @@
+# kill firefox
+echo "killing firefox"
+killall -e firefox
+
+# get proxy to set
+echo "getting proxy to set"
+proxyToSet=$1
+
+# run firefox with proxy
+echo "running firefox with proxy $proxyToSet"
+firefox -P "proxy$proxyToSet" &
+
+
+# domain="www.domain.com"
+# port="9999"
+
+
+# cat profiles | grep "proxy$proxyToSet" -m 1 | grep 
+# cat profiles | grep "proxy1" -m 1
+
+# cat profiles | grep "proxy1" -m 1 | awk -v N=$N
+
+# change proxy settings
+# folderName="$(ls ~/.mozilla/firefox | grep -m 1 '.default')"
+# cat ~/.mozilla/firefox/$folderName/prefs.js
+
+#reload firefox
+
+# firefox -ProfileManager

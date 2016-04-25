@@ -1,0 +1,4 @@
+proxy format,address,port
+proxy1,www.thisisaproxy.com,1234
+proxy2,https://www.avoideverything.org,2929
+proxy3,https://www.proxy3.eu,2823
