@@ -1,9 +1,9 @@
 # kill firefox
-echo "killing firefox"
-killall -e firefox
+# echo "killing firefox"
+killall -e firefox &> /dev/null
 
 # get proxy to set
-echo "getting proxy to set"
+# echo "getting proxy to set"
 proxyToSet=$1
 
 # run firefox with proxy
@@ -27,3 +27,5 @@ firefox -P "proxy$proxyToSet" &
 #reload firefox
 
 # firefox -ProfileManager
+
+# chromium-browser --proxy-server="http://127.0.0.1:8080"
